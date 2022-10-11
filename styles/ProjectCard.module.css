@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: var(--cardColor);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  aspect-ratio: 1.5;
+}
+
+.imageContainer {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.name {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.techList {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wrapper:hover {
+  transform: translateY(-4px);
+}
