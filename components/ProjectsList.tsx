@@ -7,7 +7,7 @@ const PROJECTS_LIST: Project[] = [
   {
     name: "Recipe sharing website",
     techList: [Tech.typeScript, Tech.nextJS],
-    imagePath: "/tulip.jpg",
+    imagePath: "/recipes.png",
     githubURL: "",
     webURL: "",
   },
