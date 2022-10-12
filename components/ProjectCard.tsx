@@ -12,20 +12,20 @@ import styles from "../styles/ProjectCard.module.css";
 import Project from "../types/project";
 import { IconType } from "react-icons";
 
-const getIcon = (tech: Tech): ReactElement<IconType> => {
+const getIcon = (tech: Tech, index: number): ReactElement<IconType> => {
   switch (tech) {
     case Tech.typeScript:
-      return <SiTypescript />;
+      return <SiTypescript key={index} />;
     case Tech.reactJS:
-      return <SiReact />;
+      return <SiReact key={index} />;
     case Tech.nextJS:
-      return <SiNextdotjs />;
+      return <SiNextdotjs key={index} />;
     case Tech.flutter:
-      return <SiFlutter />;
+      return <SiFlutter key={index} />;
     case Tech.dart:
-      return <SiDart />;
+      return <SiDart key={index} />;
     default:
-      return <SiTypescript />;
+      return <SiTypescript key={index} />;
   }
 };
 
@@ -49,7 +49,7 @@ const ProjectCard: FC<IProjectCardProps> = ({ project }) => {
         <div className={styles.details}>
           <h2 className={styles.name}>{project.name}</h2>
           <div className={styles.techList}>
-            {project.techList.map((tech) => getIcon(tech))}
+            {project.techList.map((tech, index) => getIcon(tech, index))}
           </div>
         </div>
       </div>
