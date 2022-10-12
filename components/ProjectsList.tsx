@@ -9,7 +9,7 @@ const PROJECTS_LIST: Project[] = [
     techList: [Tech.typeScript, Tech.nextJS],
     imagePath: "/recipes.png",
     githubURL: "",
-    webURL: "",
+    webURL: "https://recipes-drab.vercel.app/",
   },
   {
     name: "Sudy timer website",
