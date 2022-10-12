@@ -9,6 +9,7 @@ import {
   SiDart,
   SiGithub,
 } from "react-icons/si";
+import { AiOutlineLink } from "react-icons/ai";
 import styles from "../styles/ProjectCard.module.css";
 import Project from "../types/project";
 import { IconType } from "react-icons";
@@ -62,7 +63,10 @@ const ProjectCard: FC<IProjectCardProps> = ({ project }) => {
         target="_blank"
         rel="noreferrer"
       >
-        <h2 className={styles.name}>{project.name}</h2>
+        <h2 className={styles.name}>
+          <AiOutlineLink />
+          {project.name}
+        </h2>
         <div className={styles.techList}>
           {project.techList.map((tech, index) => getIcon(tech, index))}
         </div>

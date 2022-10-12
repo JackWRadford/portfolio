@@ -26,6 +26,9 @@
 }
 
 .name {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
   font-size: small;
   font-weight: lighter;
 }
