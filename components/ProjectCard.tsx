@@ -36,12 +36,7 @@ interface IProjectCardProps {
 
 const ProjectCard: FC<IProjectCardProps> = ({ project }) => {
   return (
-    <a
-      className={styles.wrapper}
-      href={project.webURL}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <div className={styles.wrapper}>
       <div className={styles.imageContainer}>
         <Image
           width={2000}
@@ -61,13 +56,18 @@ const ProjectCard: FC<IProjectCardProps> = ({ project }) => {
           <SiGithub /> GitHub
         </a>
       )}
-      <div className={styles.details}>
+      <a
+        className={styles.details}
+        href={project.webURL}
+        target="_blank"
+        rel="noreferrer"
+      >
         <h2 className={styles.name}>{project.name}</h2>
         <div className={styles.techList}>
           {project.techList.map((tech, index) => getIcon(tech, index))}
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 };
 

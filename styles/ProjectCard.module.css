@@ -5,7 +5,6 @@
   background-color: var(--cardColor);
   box-shadow: var(--shadow);
   transition: all 0.3s ease 0s;
-  cursor: pointer;
   aspect-ratio: 1.5;
 }
 
@@ -22,6 +21,8 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
+  cursor: pointer;
+  height: 3rem;
 }
 
 .name {
@@ -46,6 +47,7 @@
   margin-top: 1rem;
   border-radius: 0 4px 4px 0;
   box-shadow: var(--shadow);
+  cursor: pointer;
 }
 
 .wrapper:hover {
