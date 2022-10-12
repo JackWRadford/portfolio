@@ -12,14 +12,14 @@ const PROJECTS_LIST: Project[] = [
     webURL: "https://recipes-drab.vercel.app/",
   },
   {
-    name: "Sudy timer website",
+    name: "Study timer website",
     techList: [Tech.typeScript, Tech.nextJS],
     imagePath: "/studytimer.png",
     githubURL: "https://github.com/JackWRadford/focus-timer",
     webURL: "https://studytimer.io/",
   },
   {
-    name: "Turn - Reading Tracker app",
+    name: "Turn - Reading tracker app",
     techList: [Tech.dart, Tech.flutter],
     imagePath: "/turn.png",
     githubURL: "",
