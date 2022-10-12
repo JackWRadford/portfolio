@@ -15,7 +15,7 @@ const PROJECTS_LIST: Project[] = [
     name: "Study timer website",
     techList: [Tech.typeScript, Tech.nextJS],
     imagePath: "/studytimer.png",
-    githubURL: "https://github.com/JackWRadford/focus-timer",
+    githubURL: "https://github.com/JackWRadford/next-focus-timer",
     webURL: "https://studytimer.io/",
   },
   {
