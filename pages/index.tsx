@@ -7,8 +7,8 @@ const Home: NextPage = () => {
     <div className={styles.wrapper}>
       <h1 className={styles.name}>JACK RADFORD</h1>
       <h1 className={styles.description}>
-        I&apos;m a <span className={styles.highlight}>front-end</span> software
-        developer, from Henley-on-Thames.
+        I&apos;m a <span className={styles.highlight}>software developer</span>{" "}
+        from Henley-on-Thames.
       </h1>
       <p className={styles.experience}>
         Experience building web apps with{" "}

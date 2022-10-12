@@ -5,6 +5,13 @@
   max-width: 50rem;
 }
 
+@media (max-width: 600px) {
+  .wrapper {
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+
 .name {
   font-size: medium;
   font-weight: inherit;
