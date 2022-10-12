@@ -7,6 +7,7 @@ import {
   SiReact,
   SiFlutter,
   SiDart,
+  SiGithub,
 } from "react-icons/si";
 import styles from "../styles/ProjectCard.module.css";
 import Project from "../types/project";
@@ -35,22 +36,35 @@ interface IProjectCardProps {
 
 const ProjectCard: FC<IProjectCardProps> = ({ project }) => {
   return (
-    <a href={project.webURL} target="_blank" rel="noreferrer">
-      <div className={styles.wrapper}>
-        <div className={styles.imageContainer}>
-          <Image
-            width={2000}
-            height={2000}
-            layout="responsive"
-            alt={project.name}
-            src={project.imagePath}
-          />
-        </div>
-        <div className={styles.details}>
-          <h2 className={styles.name}>{project.name}</h2>
-          <div className={styles.techList}>
-            {project.techList.map((tech, index) => getIcon(tech, index))}
-          </div>
+    <a
+      className={styles.wrapper}
+      href={project.webURL}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <div className={styles.imageContainer}>
+        <Image
+          width={2000}
+          height={2000}
+          layout="responsive"
+          alt={project.name}
+          src={project.imagePath}
+        />
+      </div>
+      {project.githubURL && (
+        <a
+          className={styles.github}
+          href={project.githubURL}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SiGithub /> GitHub
+        </a>
+      )}
+      <div className={styles.details}>
+        <h2 className={styles.name}>{project.name}</h2>
+        <div className={styles.techList}>
+          {project.techList.map((tech, index) => getIcon(tech, index))}
         </div>
       </div>
     </a>

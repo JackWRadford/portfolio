@@ -8,14 +8,14 @@ const PROJECTS_LIST: Project[] = [
     name: "Recipe sharing website",
     techList: [Tech.typeScript, Tech.nextJS],
     imagePath: "/recipes.png",
-    githubURL: "",
+    githubURL: "https://github.com/JackWRadford/recipes",
     webURL: "https://recipes-drab.vercel.app/",
   },
   {
     name: "Sudy timer website",
     techList: [Tech.typeScript, Tech.nextJS],
     imagePath: "/studytimer.png",
-    githubURL: "",
+    githubURL: "https://github.com/JackWRadford/focus-timer",
     webURL: "https://studytimer.io/",
   },
   {
@@ -30,7 +30,7 @@ const PROJECTS_LIST: Project[] = [
     name: "Trait - Habit tracker app",
     techList: [Tech.dart, Tech.flutter],
     imagePath: "/trait.png",
-    githubURL: "",
+    githubURL: "https://github.com/JackWRadford/habit-tracker",
     webURL:
       "https://apps.apple.com/gb/app/trait-habit-tracker-streaks/id1616194863",
   },
