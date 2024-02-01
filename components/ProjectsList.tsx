@@ -16,7 +16,7 @@ const PROJECTS_LIST: Project[] = [
     techList: [Tech.typeScript, Tech.nextJS],
     imagePath: "/studytimer.png",
     githubURL: "https://github.com/JackWRadford/next-focus-timer",
-    webURL: "https://studytimer.io/",
+    webURL: "https://next-focus-timer.vercel.app/",
   },
   {
     name: "Turn - Reading tracker app",
